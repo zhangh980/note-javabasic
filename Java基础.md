@@ -1,84 +1,8 @@
-# JAVA学习路线
-
-1. 基础必备  
-   - Java基础  
-   - MySQL  
-   - JDBC  
-   - IDEA  
-   - Java8  
-   - Java数据结构及算法  
-   - Java设计模式  
-   - JavaWeb  
-   - 书城案例
-
-2. 微服务核心  
-   - Spring5   
-   - SpringMVC前端   
-   - MyBatis   
-   - MyBatisPlus   
-   - SSM 整合  
-   - Spring Boot1 (经典)  
-   - Spring Boot2  
-   - SpringCloud  
-   - SpringCloudAlibaba  
-   - Sentinel
-  
-3. 微服务生态
-   - Maven  
-   - Linux  
-   - Redis6  
-   - Git (IDEA版)  
-   - Docker  
-   - Elasticsearch  
-   - Dubbo  
-   - ZooKeeper  
-   - Nginx  
-   - Spring Security  
-   - ActiveMQ  
-   - RabbitMQ  
-   - RocketMQ  
-   - JVM  
-   - JUC  
-   - MySQL 高级  
-   - Mycat  
-   - Kubernetes/k8s  
-   - Shiro  
-   - 面试题(1-3季)
-
-4. 实战项目
-   - 入门项目：尚筹网
-       > 夯实基础，单一架构过渡到分布式架构
-   - 微服务项目：谷粒学苑  尚医通  尚融宝
-       > 大厂真实项目，还原企业开发环境（三选一学习）
-   - 架构师级项目：谷粒商城
-       > 对标阿里P6/P7，冲击40-60W，微服务+分布式+全栈+集群+自动化运维- +可视化CICD
-
-5. 技术丰富
-   - NIO  
-   - Netty  
-   - Java9-15新特性  
-   - Oracle  
-   - IDE中配置Maven&Git  
-   - JPA  
-   - Spring注解  
-   - SpringData  
-   - SSSP整合&分页   
-   - 通用Mapper  
-   - RBAC   
-   - SVN（基础+高级）  
-   - Jenkins
-   - ShardingSphere  
-   - 密码学   
-   - Struts2   
-   - Hibernate   
-   - SSH整合&案例  
-   - Git（Eclipse版）
-
-
 # 第1章 Java语言概述
+[JAVA学习路线](http://www.atguigu.com/download.shtml#java)
 
- Java基础知识图解
-![Java基础知识图解](imgs/Java基础知识图解.png)
+Java基础知识图解
+![Java基础知识图解](image/Java基础/Java基础知识图解.png)
 
 - 第一部分：编程语言核心结构
     > 主要知识点：变量、基本语法、分支、循环、数组、...
@@ -232,7 +156,7 @@ JDK是提供给Java开发人员使用的，其中包含了java的开发工具，
 包括Java虚拟机(JVM Java Virtual Machine)和Java程序所需的核心类库等，如果想要运行一个开发好的Java程序，计算机中只需要安装JRE即可。
 
 Java架构
-![Java架构](imgs/Java8.0_platform.jpg)
+![Java架构](image/Java基础/Java8.0_platform.jpg)
 
 官方网址：
 [oracle](www.oracle.com)
@@ -524,7 +448,7 @@ Java中的名称命名规范：
   - 自增自减可以得到相邻Unicode字符。
   - 可以转换为任意一种数据类型，反之亦然。将整数转换成char仅保留数据的低16位。
 
-![](imgs/2021-10-16-12-01-27.png)
+![](image/Java基础/2021-10-16-12-01-27.png)
 
 Character相关方法：
 - `isDigit​(ch)`：确定指定的字符是否为数字。
@@ -571,7 +495,7 @@ Character相关方法：
 ### 基本数据类型转换
 
 - **自动类型转换**：容量小的类型自动转换为容量大的数据类型。数据类型按容量大小排序为：
-![自动类型转换](./imgs/自动类型转换.png)
+![自动类型转换](./image/Java基础/自动类型转换.png)
 
 - 有多种类型的数据混合运算时，系统首先自动将所有数据转换成容量最大的那种数据类型，然后再进行计算。
 - 说明：此时的容量大小指的是，表示数的范围的大和小。比如：float容量要大于long的容量
@@ -771,7 +695,7 @@ Character相关方法：
 - 运算符有不同的优先级，所谓优先级就是表达式运算中的运算顺序。如右表，上一行运算符总优先于下一行。
 - 只有单目运算符、三元运算符、赋值运算符是从右向左运算的。
 
-![运算符的优先级](imgs/运算符优先级.png)
+![运算符的优先级](image/Java基础/运算符优先级.png)
 
 
 # 第2章 基本语法(下)：程序流程控制
@@ -1269,7 +1193,7 @@ int[] arr;arr = {3,9,8}; //错误写法
 | 引用类型     | null（没有调用构造器）      |
 
 jvm内存解析
-![jvm内存](imgs/jvm.jpg)
+![jvm内存](image/Java基础/jvm.jpg)
 
 ## 3-3 多维数组的使用
 
@@ -1409,7 +1333,7 @@ jvm内存解析
   }
   ```
 6. 排序算法性能对比
-  ![排序算法性能对比](imgs/排序算法性能对比.png)
+  ![排序算法性能对比](image/Java基础/排序算法性能对比.png)
 7. 各种内部排序方法性能比较
    1. 从**平均时间**而言：**快速排序最佳**。但在最坏情况下时间性能不如堆排序和归并排序。
    2. 从**算法简单性**看：由于直接选择排序、直接插入排序和冒泡排序的算法比较简单，将其认为是简单算法。对于Shell排序、堆排序、快速排序和归并排序算法，其算法比较复杂，认为是复杂排序。
@@ -1539,7 +1463,7 @@ arr引用没有指向实体，却在操作实体中的元素时。
 
 ### 内存解析
 
-![内存解析](imgs/内存解析.png)
+![内存解析](image/Java基础/内存解析.png)
 
 - 堆（Heap），此内存区域的唯一目的就是存放对象实例，几乎所有的对象实例都在这里分配内存。这一点在Java虚拟机规范中的描述是：所有的对象实例以及数组都要在堆上分配。
 - 通常所说的栈（Stack），是指虚拟机栈。虚拟机栈用于存储局部变量等。局部变量表存放了编译期可知长度的各种基本数据类型（boolean、byte、char 、 short 、 int 、 float 、 long 、double）、对象引用（reference类型，它不等同于对象本身，是对象在堆内存的首地址）。 方法执行完，自动释放。
@@ -2092,7 +2016,7 @@ Debug的一些概念：
 ## 5-5 子类对象实例化过程
 
 子类对象实例化的全过程
-![子类对象实例化过程](imgs/子类对象实例化过程.png)
+![子类对象实例化过程](image/Java基础/子类对象实例化过程.png)
 1. 从结果上来看：（继承性）
    1. 子类继承父类以后，就获取了父类中声明的属性或方法。
    2. 创建子类的对象，在堆空间中，就会加载所有父类中声明的属性。
@@ -2191,7 +2115,7 @@ String str = new Date();
   - 无继承关系的引用类型间的转换是非法的
   - 在造型前可以使用instanceof操作符测试一个对象的类型
 
-![对象类型转换](imgs/对象类型转换.png)
+![对象类型转换](image/Java基础/对象类型转换.png)
 
 子类继承父类
 - 若子类重写了父类方法，就意味着子类里定义的方法彻底**覆盖**了父类里的同名方法，系统将不可能把父类里的方法转移到子类中：编译看左边，运行看右边
@@ -2408,7 +2332,7 @@ public static boolean equals(byte[] value, byte[] other) {
   String intStr = 5 + ""
   ```
 
-![基本类型、包装类与String类间的转换](imgs/基本类型、包装类与String类间的转换.png)
+![基本类型、包装类与String类间的转换](image/Java基础/基本类型、包装类与String类间的转换.png)
 
 包装类用法举例
 - 装箱：包装类使得一个基本数据类型的数据变成了类。有了类的特点，可以调用类中的方法。
@@ -2545,7 +2469,7 @@ static注意点：
 ### 单例 (Singleton)设计模式
 
 - 设计模式是在大量的实践中总结和理论化之后优选的代码结构、编程风格、以及解决问题的思考方式。设计模免去我们自己再思考和摸索。就像是经典的棋谱，不同的棋局，我们用不同的棋谱。“套路”
-- ![设计模式](imgs/设计模式.png)
+- ![设计模式](image/Java基础/设计模式.png)
 - 所谓类的单例设计模式，就是采取一定的方法保证在整个的软件系统中，对某个类**只能存在一个对象实例**，并且该类只提供一个取得其对象实例的方法。如果我们要让类在一个虚拟机中只能产生一个对象，我们首先必须将**类的构造器的访问权限设置为private**，这样，就不能用new操作符在类的外部产生类的对象了，但在类内部仍可以产生该类的对象。因为在类的外部开始还无法得到类的对象，只能调用该类的某个静态方法以返回类内部创建的对象，静态方法只能访问类中的静态成员变量，所以，指向类内部产生的**该类对象的变量也必须定义成静态的**。
 - 通常情况下在创建实例时要执行一些操作。一般使用静态代码块或提供公共的静态的方法，返回当前类的对象。如果明确不需要进行初始化操作可以使用这样的饿汉式操作`public static final Singleton single = new Singleton();`，final运算符防止恶意修改。
 
@@ -3379,7 +3303,7 @@ public StackTraceElement[] getStackTrace();
 ```
 
 异常处理的5个关键字
-![异常处理的5个关键字](imgs/异常处理的5个关键字.png)
+![异常处理的5个关键字](image/Java基础/异常处理的5个关键字.png)
 
 - 世界上最遥远的**距离**，是我在if里你在else里，似乎一直相伴又永远分离；
 - 世界上最痴心的**等待**，是我当case你是switch，或许永远都选不上自己；
@@ -3559,9 +3483,9 @@ JDK中用Thread.State类定义了线程的几种状态
 - 阻塞：在某种特殊情况下，被人为挂起或执行输入输出操作时，让出 CPU 并临时中止自己的执行，进入阻塞状态
 - 死亡：线程完成了它的全部工作或线程被提前强制性地中止或出现异常导致结束
 
-![线程的生命周期](imgs/线程的生命周期.png)
+![线程的生命周期](image/Java基础/线程的生命周期.png)
 
-![线程状态转换图](imgs/线程状态转换图.png)
+![线程状态转换图](image/Java基础/线程状态转换图.png)
 
 ## 8-4 线程的同步
 
@@ -4170,7 +4094,7 @@ public String[] getMaxSameString(String str1, String str2) {
 
 ## 9-2 JDK8之前日期时间API
 
-![时间api](imgs/时间api.png)
+![时间api](image/Java基础/时间api.png)
 
 ### 1.java.lang.System类  
 - System类提供的`public static long currentTimeMillis()`用来返回当前时间与1970年1月1日0时0分0秒之间以毫秒为单位的时间差。（时间戳）
@@ -4405,7 +4329,7 @@ java.time.format.DateTimeFormatter 类：该类提供了三种格式化方法：
   - `void gc()`：该方法的作用是请求系统进行垃圾回收。至于系统是否立刻回收，则取决于系统中垃圾回收算法的实现以及系统执行时的情况。
   - `String getProperty(String key)`：该方法的作用是获得系统中属性名为key的属性对应的值。
   - `String setProperty​(String key, String value)`：设置指定键指示的系统属性。系统中常见的属性名以及属性的作用如下表所示：
-![System](imgs/Systemvvv.png)
+![System](image/Java基础/Systemvvv.png)
 
 ## 9-6 Math类
 
@@ -4529,7 +4453,7 @@ public static final double PI = 3.14159265358979323846;
 
 ### 10.1.4 Enum类的主要方法
 
-![](imgs/EnumFunction.png)
+![](image/Java基础/EnumFunction.png)
 
 - values()方法：返回枚举类型的对象数组。该方法可以很方便地遍历所有的枚举值。
 - valueOf(String str)：可以把一个字符串转为对应的枚举类对象。要求字符串必须是枚举类对象的“名字”。如不是，会有运行时异常：IllegalArgumentException。
@@ -4651,7 +4575,7 @@ enum Season implements Info {
   - RetentionPolicy.RUNTIME:在运行时有效（即运行时保留），当运行 Java 程序时, JVM 会保留注释。程序可以通过反射获取该注释。只有声明为RUNTIME生命周期的注解，才能通过反射获取。
 
 - @Target: 用于修饰 Annotation 定义, 用于指定被修饰的 Annotation 能用于修饰哪些程序元素。 @Target 也包含一个名为 value 的成员变量。可取值如下：TYPE（类或接口）,    FIELD（属性）,    METHOD（方法）,    PARAMETER（参数）,    CONSTRUCTOR（构造器）,    LOCAL_VARIABLE（局部变量）,    ANNOTATION_TYPE,    PACKAGE（包）,    TYPE_PARAMETER(Type parameter declaration:since 1.8),    TYPE_USE(Use of a type:since 1.8),    MODULE(Module declaration:since 9),    RECORD_COMPONENT(Record component:since 16);
-![](imgs/target.png)
+![](image/Java基础/target.png)
 
 - @Documented: 用于指定被该元 Annotation 修饰的 Annotation 类将被javadoc 工具提取成文档。即表示所修饰的注解在被javadoc解析时，保留下来。默认情况下，javadoc是不包括注解的。
   - 定义为Documented的注解必须设置Retention值为RUNTIME。
@@ -4732,10 +4656,10 @@ class MyAnnotationTest {}
     - HashMap、LinkedHashMap、TreeMap、Hashtable、Properties
 
 Collection接口继承树
-![Collection接口继承树](imgs/Collection接口继承树.png)
+![Collection接口继承树](image/Java基础/Collection接口继承树.png)
 
 Map接口继承树
-![Map接口继承树](imgs/Map接口继承树.png)
+![Map接口继承树](image/Java基础/Map接口继承树.png)
 
 ## 11-2 Collection接口方法
 
@@ -5392,10 +5316,10 @@ Collections常用方法：同步控制
 2. 解决获取数据元素时，需要类型强制转换的问题，好比不用每回拿商品、药品都要辨别。
 
 在集合中没有泛型时：类型不安全，强转时，可能出现ClassCastException
-![在集合中没有泛型时](imgs/泛型.png)
+![在集合中没有泛型时](image/Java基础/泛型.png)
 
 在集合中有泛型时：编译时，就会进行类型检查，保证数据的安全
-![在集合中有泛型时](imgs/在集合中有泛型时.png)
+![在集合中有泛型时](image/Java基础/在集合中有泛型时.png)
 
 Java泛型可以保证如果程序在编译时没有发出警告，运行时就不会产生ClassCastException异常。同时，代码更加简洁、健壮。
 
@@ -5757,7 +5681,7 @@ public void deleteDirectory(File file) {
 - 按数据流的**流向**不同分为：输入流，输出流
 - 按流的**角色**的不同分为：节点流，处理流
 
-![](imgs/2021-10-13-12-53-23.png)
+![](image/Java基础/2021-10-13-12-53-23.png)
 
 | (抽象基类) | 字节流       | 字符流 |
 | ---------- | ------------ | ------ |
@@ -5767,9 +5691,9 @@ public void deleteDirectory(File file) {
 1. Java的IO流共涉及40多个类，实际上非常规则，都是从如下4个抽象基类派生的。
 2. 由这四个类派生出来的子类名称都是以其父类名作为子类名后缀。
 
-![IO 流体系](imgs/io流体系.png)
+![IO 流体系](image/Java基础/io流体系.png)
 
-![IO 流继承树](imgs/2021-10-17-12-00-49.png)
+![IO 流继承树](image/Java基础/2021-10-17-12-00-49.png)
 
 ### 节点流和处理流
 
@@ -6629,8 +6553,8 @@ Path path = Paths.get("index.html");
   - 可以广播发送
   - 发送数据结束时无需释放资源，开销小，速度快
 
-![tcp3](imgs/tcp3.png)
-![tcp4](imgs/tcp4.png)
+![tcp3](image/Java基础/tcp3.png)
+![tcp4](image/Java基础/tcp4.png)
 
 ### Socket
 
@@ -6666,7 +6590,7 @@ Path path = Paths.get("index.html");
 
 - Java语言的基于套接字编程分为服务端编程和客户端编程，其通信模型如图所示：
 
-![sc](imgs/sc.png)
+![sc](image/Java基础/sc.png)
 
 - 客户端Socket的工作过程包含以下四个基本的步骤：
   - 创建 Socket：根据指定服务端的 IP 地址或端口号构造 Socket 类对象。若服务器端响应，则建立客户端到服务器的通信线路。若连接失败，会出现异常。
@@ -7133,7 +7057,7 @@ public void test(){
      - 当初始化一个类的时候，如果发现其父类还没有进行初始化，则需要先触发其父类的初始化。
      - 虚拟机会保证一个类的`<clinit>()`方法在多线程环境中被正确加锁和同步。
 
-![](imgs/2021-10-15-00-16-13.png)
+![](image/Java基础/2021-10-15-00-16-13.png)
 
 ### 了解：什么时候会发生类初始化？
 
@@ -7157,7 +7081,7 @@ public void test(){
 
 类加载器作用是用来把类(class)装载进内存的。JVM 规范定义了如下类型的类的加载器。
 
-![ClassLoader](imgs/ClassLoader.png)
+![ClassLoader](image/Java基础/ClassLoader.png)
 
 ```java
 //1.获取一个系统类加载器
@@ -7572,14 +7496,14 @@ public class ProxyTest {
 
 前面介绍的Proxy和InvocationHandler，很难看出这种动态代理的优势，下面介绍一种更实用的动态代理机制
 
-![](imgs/2021-10-15-16-12-20.png)
+![](image/Java基础/2021-10-15-16-12-20.png)
 
-![](imgs/2021-10-15-16-13-26.png)
+![](image/Java基础/2021-10-15-16-13-26.png)
 
 - 使用Proxy生成一个动态代理时，往往并不会凭空产生一个动态代理，这样没有太大的意义。通常都是为指定的目标对象生成动态代理
 - 这种动态代理在AOP(面向切面编程)中被称为AOP代理，AOP代理可代替目标对象，AOP代理包含了目标对象的全部方法。但AOP代理中的方法与目标对象的方法存在差异：AOP代理里的方法可以在执行目标方法之前、之后插入一些通用处理
 
-![aop](imgs/aop.png)
+![aop](image/Java基础/aop.png)
 
   > JVM中类的装载是由ClassLoader和它的子类来实现的,Java ClassLoader 是一个重要的Java运行时系统组件。它负责在运行时查找和装入类文件的类。
 
@@ -8133,7 +8057,7 @@ Java8 的新并行操作 API 十分灵活。让我们一起看几个我们要用
 
 模块将由通常的类和新的模块声明文件（module-info.java）组成。该文件是位于java代码结构的顶层，该模块描述符明确地定义了我们的模块需要什么依赖关系，以及哪些模块被外部使用。在exports子句中未提及的所有包默认情况下将封装在模块中，不能在外部使用。
 
-![](imgs/module-info.png)
+![](image/Java基础/module-info.png)
 
 - exports：控制着哪些包可以被其它模块访问到。所有不被导出的包默认都被封装在模块里面。
 - requires：指明对其它模块的依赖。
@@ -8388,7 +8312,7 @@ for(var i = 0;i < 100;i++) {
 2. lambda表示式中，左边的函数式接口不能声明为var
 3. 方法引用中，左边的函数式接口不能声明为var
 4. 数组的静态初始化中，注意如下的情况也不可以
-![](imgs/变量类型推断.png)
+![](image/Java基础/变量类型推断.png)
 
 ```java
 int[] arr = {1, 2, 3, 4}; //类型推断
@@ -8442,11 +8366,11 @@ System.out.println(list2 == copy2); // false
 
 北京时间 2018年9月26日，Oracle 官方宣布 Java 11 正式发布。这是 Java 大版本周期变化后的第一个长期支持版本，非常值得关注。从官网即可下载,最新发布的 Java11 将带来 ZGC、Http Client 等重要特性，一共包含 17 个 JEP（JDK Enhancement Proposals，JDK 增强提案）。其实，总共更新不止17个，只是我们更关注如下的17个JEP更新.
 
-![](imgs/java11.png)
+![](image/Java基础/java11.png)
 
 JDK 11 将是一个 企业不可忽视的版本。从时间节点来看，JDK 11 的发布正好处在 JDK 8 免费更新到期的前夕，同时 JDK 9、10 也陆续成为“历史版本”，下面是 Oracle JDK 支持路线图：
 
-![](imgs/javasepublicupdates.png)
+![](image/Java基础/javasepublicupdates.png)
 
 ### JDK 11 是一个长期支持版本（LTS, Long-Term-Support）
 
@@ -8457,9 +8381,9 @@ JDK 11 将是一个 企业不可忽视的版本。从时间节点来看，JDK 11
 
 不过与 Java 9 和 Java 10 这两个被称为“功能性的版本”不同（两者均只提供半年的技术支持），Java 11 不仅提供了长期支持服务，还将作为Java 平台的参考实现。Oracle 直到2023年9月都会为Java 11 提供技术支持，而补丁和安全警告等扩展支持将持续到2026年。
 
-![](imgs/2021-10-16-11-03-14.png)
+![](image/Java基础/2021-10-16-11-03-14.png)
 
-![](imgs/jdk_lts.png)
+![](image/Java基础/jdk_lts.png)
 
 新的长期支持版本每三年发布一次，根据后续的发布计划，下一个长期支持版 Java 17 将于2021年发布。
 
